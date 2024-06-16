@@ -6,10 +6,10 @@ dotenv.config({
 })
 
 const databaseConnection = () => {
-    mongoose.connect("mongodb+srv://saxenavarnitcode7:hello123@cluster0.4tu17jt.mongodb.net/netflixx?retryWrites=true&w=majority&appName=Cluster0").then(()=>{
-        console.log("mongodb connected successfully");
-    }).catch((error)=>{
-        console.log(error);
-    })
+    mongoose.connect("mongodb+srv://saxenavarnitcode7:hello123@cluster0.4tu17jt.mongodb.net/netflixx?retryWrites=true&w=majority&appName=Cluster0").then(() => {
+    app.listen(5000);
+  })
+  .catch((err) => console.log(err));
 };
+
 export default databaseConnection;
